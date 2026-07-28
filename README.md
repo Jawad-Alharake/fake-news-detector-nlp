@@ -20,20 +20,20 @@ The rapid spread of misinformation requires automated, scalable solutions. The g
 
 3. **Feature Engineering (TF-IDF):**
    - Converted the cleaned text into a matrix of numerical weights using `TfidfVectorizer`.
-   - Utilized an N-gram range of (1, 2) to capture critical contextual bigrams (e.g., "not true", "white house").
+   - Utilized an N-gram range of (1, 3) to capture critical contextual bigrams and trigrams (e.g., "not true", "white house").
 
 4. **Model Benchmarking & Tuning:**
    - Tested 4 baseline algorithms (Logistic Regression, Naive Bayes, Linear SVC, and Random Forest).
-   - Selected Logistic Regression as the primary classifier and optimized it using `GridSearchCV` across 12 unique parameter combinations (3-fold cross-validation).
+   - Selected Linear SVM as the primary classifier and optimized it using `GridSearchCV` across 12 unique parameter combinations (3-fold cross-validation).
 
 ## Final Model Performance
 
 The tuned Logistic Regression model achieved outstanding, balanced results on the validation set, demonstrating its ability to catch fake news without falsely penalizing objective reporting:
 
-- **Overall Accuracy:** ~94%
-- **Precision:** ~94%
-- **Recall:** ~94%
-- **F1-Score:** ~94%
+- **Overall Accuracy:** ~92.5%
+- **Precision:** ~91.7%
+- **Recall:** ~93.7%
+- **F1-Score:** ~92.7%
 
 ## Repository Structure
 
@@ -46,3 +46,14 @@ The tuned Logistic Regression model achieved outstanding, balanced results on th
 ├── confusion_matrix.png            # Visual output of model evaluation
 ├── presentation_nlp.pptx           # Powerpoint presentation of the project
 └── README.md
+
+
+ ## How to Run
+
+1. Clone the repository.
+2. Ensure you have the required libraries installed: `pip install pandas numpy scikit-learn nltk matplotlib seaborn`.
+3. Ensure the `dataset` folder is in the same directory as the script and contains the necessary `.csv` files.
+4. Run the script:
+
+```bash
+   python nlp_comprehensive_classifier.py 
