@@ -28,7 +28,7 @@ The rapid spread of misinformation requires automated, scalable solutions. The g
 
 ## Final Model Performance
 
-The tuned Logistic Regression model achieved outstanding, balanced results on the validation set, demonstrating its ability to catch fake news without falsely penalizing objective reporting:
+The tuned Linear SVC model achieved outstanding, balanced results on the validation set, demonstrating its ability to catch fake news without falsely penalizing objective reporting:
 
 - **Overall Accuracy:** ~92.5%
 - **Precision:** ~91.7%
