@@ -16,7 +16,6 @@ The rapid spread of misinformation requires automated, scalable solutions. The g
 2. **Deep Text Preprocessing:**
    - Aggressive regex cleaning (removing punctuation, numbers, and tabs).
    - Stopword removal to eliminate structural linguistic noise.
-   - **Advanced Lemmatization:** Integrated NLTK's `pos_tag` to dynamically map Part-of-Speech context (adjectives, verbs, adverbs) to ensure the `WordNetLemmatizer` accurately reduced words to their true roots.
 
 3. **Feature Engineering (TF-IDF):**
    - Converted the cleaned text into a matrix of numerical weights using `TfidfVectorizer`.
