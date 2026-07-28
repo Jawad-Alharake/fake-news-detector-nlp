@@ -102,7 +102,7 @@ def benchmark_models(X_train, y_train, X_val, y_val):
     """Tests multiple models to find the best baseline."""
     print("--- 2. BENCHMARKING MULTIPLE MODELS ---")
     
-    tfidf = TfidfVectorizer(max_features=5000, ngram_range=(1,3), max_df=0.75, min_df=5)
+    tfidf = TfidfVectorizer(max_features=5000, ngram_range=(1,2), max_df=0.75, min_df=5)
     X_train_vec = tfidf.fit_transform(X_train)
     X_val_vec = tfidf.transform(X_val)
     
