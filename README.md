@@ -46,7 +46,7 @@ The tuned Logistic Regression model achieved outstanding, balanced results on th
 ├── confusion_matrix.png            # Visual output of model evaluation
 ├── presentation_nlp.pptx           # Powerpoint presentation of the project
 └── README.md
-
+```
 
  ## How to Run
 
@@ -56,4 +56,5 @@ The tuned Logistic Regression model achieved outstanding, balanced results on th
 4. Run the script:
 
 ```bash
-   python nlp_comprehensive_classifier.py 
+   python nlp_comprehensive_classifier.py
+```
