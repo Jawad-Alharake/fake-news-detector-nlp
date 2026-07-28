@@ -24,7 +24,7 @@ The rapid spread of misinformation requires automated, scalable solutions. The g
 
 4. **Model Benchmarking & Tuning:**
    - Tested 4 baseline algorithms (Logistic Regression, Naive Bayes, Linear SVC, and Random Forest).
-   - Selected Linear SVM as the primary classifier and optimized it using `GridSearchCV` across 12 unique parameter combinations (3-fold cross-validation).
+   - Selected Linear SVC as the primary classifier and optimized it using `GridSearchCV` across 12 unique parameter combinations (3-fold cross-validation).
 
 ## Final Model Performance
 
