@@ -134,7 +134,7 @@ def tune_best_model(X_train, y_train):
     print("--- 3. HYPERPARAMETER TUNING ---")
     
     pipeline = Pipeline([
-        ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1,3), max_df=0.75, min_df=5)),
+        ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1,2), max_df=0.75, min_df=5)),
         ('clf', LogisticRegression(max_iter=1000))
     ])
     
